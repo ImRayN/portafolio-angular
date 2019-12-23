@@ -8,7 +8,7 @@ const app_routes: Routes = [
     { path: 'home', component: PortfolioComponent },
     { path: 'about', component: AboutComponent },
     { path: 'portfolio-item', component: PortfolioItemComponent },
-    { path: '**', pathMatch: 'full', redirectTo: '' }
+    { path: '**', pathMatch: 'full', redirectTo: '/home' } // Esta es la redirección por defecto si no se le pasa nada por el gato (hashtag)
     
 
 ];
