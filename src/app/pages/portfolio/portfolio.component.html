@@ -24,7 +24,7 @@
         <p>Espere por favor</p>
     </div>
     <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4" *ngIf='!productosService.cargando'>
-        <a *ngFor='let producto of productosService.productos' routerLink='/portfolio-item' class="animated fadeIn slow rk-item ae-masonry__item"><img src="assets/productos/{{producto.url}}.jpg" alt="">
+        <a *ngFor='let producto of productosService.productos' routerLink='/portfolio-item/{{producto.cod}}' class="animated fadeIn slow rk-item ae-masonry__item"><img src="assets/productos/{{producto.url}}.jpg" alt="">
             <div class="item-meta">
                 <h2>{{producto.titulo}}</h2>
                 <p>{{producto.categoria}}</p>
